@@ -1,0 +1,14 @@
+void backtrack(parameters) {
+    if (base_condition) {
+        store_answer;
+        return;
+    }
+
+    for (choices) {
+        if (valid) {
+            make_choice;
+            backtrack(next_state);
+            undo_choice;  // BACKTRACK
+        }
+    }
+}
